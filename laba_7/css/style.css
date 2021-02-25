@@ -1,0 +1,112 @@
+/*Обнуление*/
+/* *{padding:0;margin:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+html,body{height:100%;width:100%;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;} */
+/*--------------------*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.site {
+	background: url("../resource/back.jpg") no-repeat;
+	
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	min-width: 1360px;
+	background-size: cover;
+}
+
+.form {
+	min-height: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex: 1 0 auto;
+}
+
+.first, .second {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header,
+.footer {
+	flex: 0 0 50px;
+	padding: 15px;
+}
+
+.header__item,
+.footer__item {
+	height: 120px;
+	background: rgba(29, 19, 88, 0.8);
+}
+
+.container {
+	display: flex;
+	flex: 1 1 auto;
+}
+
+.nav,
+.right-side {
+	margin: 0 15px;
+	flex: 0 0 150px;
+	background: rgba(182, 77, 46, 0.75);
+}
+
+.article {
+	color: white;
+	flex: 1 1 auto;
+	background: rgba(59, 59, 59, 0.5);
+	padding: 10px;
+}
+
+button,
+input[type=button] {
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+	background-color: rgb(37, 33, 33);
+	margin: 0px 20px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	background-color: lightblue;
+	color: black;
+}
+
+td,
+th {
+	width: calc(100% / 6);
+	padding: 10px;
+	border: 2px solid white;
+}
+
+.btn {
+	display: flex;
+	margin: 20px 0;
+	justify-content: center;
+}

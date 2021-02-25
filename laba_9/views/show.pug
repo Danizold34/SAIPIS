@@ -1,0 +1,26 @@
+extends index
+
+block title
+    title #{title}
+
+block return
+    a(href='/') Назад
+
+
+block content
+    if worker.length > 0
+        div.out
+            table#result
+                tr
+                    th ФИО
+                    th Должность
+                    th Зарплата
+                    th IDN
+                each val in worker
+                    tr
+                        td #{val.name}
+                        td #{val.position}
+                        td #{val.salary}
+                        td #{val.idn}
+    else
+        h2 Нет учеников

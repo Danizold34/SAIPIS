@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../resource/script.js"></script>
+	<title>Form</title>
+</head>
+
+<body>
+	<div class="site">
+		<header class="header">
+			<div class="header__item"></div>
+		</header>
+		<div class="container">
+
+			<article class="article" id="content">
+				<form class="form__row">
+					<fieldset class=" fieldset">
+						<legend>День города</legend>
+						<div class="main">
+							<div class="text">
+								<label>Название города:<br>
+									<input type="text" id="city" placeholder="Название города:" required>
+								</label>
+							</div>
+							<div class="datetime">
+								<label>Дата и время празднования дня города:<br>
+									<input type="datetime-local" id="date">
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>Вы праздновали прошлый день города?
+									<input type="checkbox" id="celebrate" name="celebrate">
+								</label>
+							</div>
+							<div style="margin-top: 10px">
+								<label>Ваша оценка прошлого дня города:</label><br>
+								<input style="margin-top: 10px;" type="range" id="rating" name="rating" min="0" max="10"
+									value="5" step="1">
+							</div>
+							<div class="text">
+								<label>ФИО:<br>
+									<input pattern="[А-Яа-я]" type="text" id="fio" placeholder="ФИО" required>
+								</label>
+							</div>
+							<div class="radio_form">
+								<h5>Ваш пол:</h5>
+								<label>
+									<input id="male" type="radio" name="gender" value="Мужчина" checked>
+									Мужчина
+								</label>
+								<label>
+									<input id="female" type="radio" name="gender" value="Женщина">
+									Женщина
+								</label>
+							</div>
+							<div class="select">
+								<h5>Возрастная группа:</h5>
+								<select id="sel">
+									<option>до 18</option>
+									<option>18-44</option>
+									<option>45-59</option>
+									<option>60-74</option>
+									<option>75+</option>
+								</select>
+							</div>
+							<div class="text">
+								<label>Ваша почта:<br>
+									<input type="email" id="email" placeholder="proverka@example.com	" required>
+								</label>
+							</div>
+						</div>
+						<div class="sub">
+							<input type="button" class="button" value="Отправить" onclick="saveData();">
+						</div>
+					</fieldset>
+				</form>
+				<script>
+					function saveData() {
+						var person = new Object();
+						person.city = document.getElementById("city").value;
+						var nameRegex = /^[а-яёa-z ]+$/iu;
+						var valid = person.city.match(nameRegex)
+						if (valid != null) {
+							person.date = document.getElementById("date").value;
+							person.check = document.getElementById("celebrate").checked;
+							person.rating = document.getElementById("rating").value;
+							person.fio = document.getElementById("fio").value;
+							if (document.getElementById("male").checked) {
+								person.gender = document.getElementById("male").value;
+							} else {
+								person.gender = document.getElementById("female").value;
+							}
+							person.select = document.getElementById("sel").value;
+							person.email = document.getElementById("email").value;
+							var key = "person" + localStorage.length;
+							localStorage.setItem(key, JSON.stringify(person));
+							alert("Опрос пройден");
+							window.location.href = "../html/index.html";
+						} else {
+							alert("Некорректно введено название города");
+						}
+					}
+				</script>
+			</article>
+			<nav class="nav" id="nav">
+				<a href="#" id="result">Результаты</a>
+				<script>
+					var el = document.getElementById("result");
+					if (el.addEventListener)
+						el.addEventListener("click", newWindow, false);
+					else if (el.attachEvent)
+						el.attachEvent('onclick', newWindow);
+				</script>
+			</nav>
+			<aside class="right-side"></aside>
+		</div>
+		<footer class="footer">
+			<div class="footer__item"></div>
+		</footer>
+	</div>
+</body>
+
+</html>

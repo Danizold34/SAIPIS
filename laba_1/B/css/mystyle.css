@@ -1,0 +1,144 @@
+img {
+    position: absolute;
+    width: 400px;
+}
+
+body {
+  background-color: #FFFF00; 
+}
+
+.first_slot {
+  position: relative;
+  width: 800px;
+  min-width: 800px; 
+}
+
+.second_slot {
+  background-image: url("../resources/bg.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  opacity: 0.8;
+
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  -moz-column-rule: 4px solid purple;
+  -webkit-column-rule: 4px solid purple;
+  column-rule: 4px solid purple;
+
+  min-width: 800px;
+  padding: 20px;
+  border: 3px solid black;
+}
+
+.paragraph_1 {
+  color: blue;
+  font: 80% serif;
+  font-family: "Times New Roman";
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.paragraph_2 {
+  color: red;
+  font: 100% serif;
+  font-family: "Arial";
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.paragraph_3 {
+  color: black;
+  font: italic 120% serif;
+  font-family: "Comic Sans MS";
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.pic_1 {
+  top: 0px;
+  right: 0px;
+}
+
+.pic_2 {
+  right: 200px;
+  top: 200px;
+}
+
+.pic_3 {
+  top: 350px;
+  right: 400px;
+}
+
+.logo {
+  width: 200px;
+  top: 200px;
+  left: 0%;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-name: way;
+  animation-duration: 7s;
+}
+
+@keyframes way{
+    0% {
+        transform: rotate(0deg);
+        top: 200px;
+        left: 90%;
+        opacity: 0.3;
+        filter: invert(100%);
+    }
+    33% {
+        top: 200px;
+        left: 0%;
+        opacity: 1;
+        filter: invert(0%);
+    }
+    67% {
+        top: 200px;
+        left: 90%;
+        opacity: 0.3;
+        filter: invert(100%);
+    }
+    100% {
+        top: 200px;
+        left: 0%;
+        opacity: 1;
+        transform: rotate(720deg);
+        filter: invert(0%);
+    }
+}
+
+.topic {
+  position: absolute;
+  padding-top: 100px;
+  padding-left: 120px;
+  color: white;
+  text-shadow: 4px 4px 4px white;
+}
+
+.second_table {
+  max-height: 150px;
+  min-height: 150px;
+  position: absolute;
+  top: 420px;
+  left: 10px;
+}
+
+
+.text_in {
+  color: blue;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30pt;
+  border: 2px dashed white;
+  min-width: 380px;
+  max-width: 380px;
+}
+
+.first_letter {
+  color: red;
+}

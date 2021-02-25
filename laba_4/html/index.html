@@ -1,0 +1,56 @@
+<!DOCtype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="site">
+        <header class="header">
+            <div class="header__item"></div>
+        </header>
+        <div class="container">
+            <nav class="nav"></nav>
+            <article class="article" id="form">
+                <form class="form__row" name="Form" id="content">
+                    <div class="sel" id="insert">
+                        <button onclick="newWindow(); return false;">Информация</button>
+                        <button style="font-size: 14px; background-color:  rgb(215, 208, 180);" id="next"
+                            onclick="nextSerial(); return false;">Следующий
+                            сериал</button>
+
+                        <input type="radio" class="radioButton" name="Series" value="1" checked>
+                        Ведьмак
+                        <input type="radio" class="radioButton" name="Series" value="2">Бумажный
+                        дом
+                        <input type="radio" class="radioButton" name="Series" value="3">
+                        Очень странные дела
+                        <input type="radio" class="radioButton" name="Series" value="4">Голливуд
+
+                        <select id="select">
+                            <option value="" disabled selected>Новые сериалы</option>
+                            <option value="Всевидящие">Всевидящие</option>
+                            <option value="Лесные воры">Лесные воры</option>
+                            <option value="Чёрная луна">Чёрная луна</option>
+                            <option value="Рагнарёк">Рагнарёк</option>
+                            <option value="Лига Октября">Лига Октября</option>
+                        </select>
+                        <button onclick="add(); return false;">Добавить</button>
+
+                    </div>
+                </form>
+            </article>
+            <aside class="right-side"></aside>
+        </div>
+        <footer class="footer">
+            <div id="test" class="footer__item"></div>
+        </footer>
+    </div>
+    <script src="../resource/script.js"></script>
+</body>
+
+</html>

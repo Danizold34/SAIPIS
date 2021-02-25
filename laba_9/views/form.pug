@@ -1,0 +1,38 @@
+extends index
+
+block title
+    title #{title}
+
+block content
+    div.U
+        form(action="/" method="post")
+            div.input-block
+                div.items
+                    div.textInput
+                        label
+                            input(type="text" name="name" id="name" placeholder="ФИО")
+                    div.textInput
+                        label
+                            input(type="text" name="position" id="position" placeholder="Должность")
+                    div.textInput
+                        label
+                            input(type="text" name="salary" id="salary" placeholder="Зарплата")
+                    div.textInput
+                        label
+                            input(type="text" name="idn" id="idn" placeholder="IDN")
+                    input(type="button" id="submitBtn" value="Отправить данные")
+                div.items
+                    label
+                        input(type="text" name="maxAge" id="salaryFiltration" placeholder="Зарплата для фильтрации")
+                    form(action='/filtration' method='post')
+                        input(type="button" id="filtrationBtn" value="Фильтровать")
+                div.items
+                    label
+                        input(type="text" name="positionRemove" id="positionRemove" placeholder="Старая должность")
+                    label
+                        input(type="text" name="positionAdd" id="positionAdd" placeholder="Новая должность")
+                    form(action='/remove' method='post')
+                        input(type="button" id="removeBtn" value="Заменить")
+                div.items
+                    form(action='/show' method='post')
+                        input(type="submit" id='outBtn' value="Показать всех")

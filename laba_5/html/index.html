@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Form</title>
+</head>
+
+<body>
+	<div class="site">
+		<header class="header">
+			<div class="header__item"></div>
+		</header>
+		<div class="container">
+			<nav class="nav"></nav>
+			<article class="article" id="content">
+				<form class="form">
+					<div class="first">
+						<label>
+							<span>Фамилия</span>
+							<input id="surname" type="text" required />
+						</label>
+						<label>
+							<span>Номер телефона</span>
+							<input id="number" type="text" required />
+						</label>
+						<label>
+							<span>Вид договора</span>
+							<input id="contract" type="text" required />
+						</label>
+						<label>
+							<span>Адрес</span>
+							<input id="address" type="text" required />
+						</label>
+						<button id="addUser" type="button">Добавить запись</button>
+					</div>
+					<div class="second">
+						<label>
+							<span>Id</span>
+							<select name="userID"></select>
+						</label>
+						<button id="removeUser" type="button">Удалить запись с выбранным ID</button>
+						<button id="updateDataBtn" type="button">Добавить значение нового столбца для записи с
+							выбранным
+							ID</button>
+					</div>
+					<div class="third">
+						<label>
+							<span>Название нового столбца</span>
+							<input id="newPropName" type="text" />
+						</label>
+						<label>
+							<span>Значение</span>
+							<input id="newPropValue" type="text" />
+						</label>
+						<button id="addProp" type="button">Добавить</button>
+
+					</div>
+					<div class="fourth">
+						<button type="reset">Очистить форму</button>
+					</div>
+					<div class="fifth">
+						<button id="showUser" type="button">Все записи</button>
+						<button id="getUser" type="button">Записи с выбранным договором</button><label>
+							<span>Вид договора</span>
+							<input id="getContract" type="text" />
+						</label>
+
+					</div>
+				</form>
+				<div class="out">
+					<table>
+						<thead>
+							<td>id</td>
+							<td>surname</td>
+							<td>number</td>
+							<td>contract</td>
+							<td>address</td>
+						</thead>
+						<tbody class="tbody"></tbody>
+					</table>
+				</div>
+			</article>
+			<aside class="right-side"></aside>
+		</div>
+		<footer class="footer">
+			<div class="footer__item"></div>
+		</footer>
+	</div>
+	<script src="../js/templates/templates.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+
+</html>

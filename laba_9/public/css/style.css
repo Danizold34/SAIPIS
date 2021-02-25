@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    background: url("../resource/back.jpg") 50% 50%/cover no-repeat;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    min-width: 1360px;
+}
+
+header,
+footer {
+    flex: 0 0 100px;
+    padding: 15px;
+}
+
+.header__item,
+.footer__item {
+    height: 80px;
+    background: rgba(255, 195, 82, 0.9);
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 40px 40px;
+}
+
+.container {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+nav,
+aside {
+    margin: 0 15px;
+    flex: 0 0 250px;
+    background: rgba(0, 0, 0, 0.904);
+}
+
+article {
+    color: white;
+    flex: 1 1 auto;
+    background: rgba(59, 59, 59, 0.5);
+    padding: 10px;
+}
+
+form > div {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+input[type=text] {
+    margin: 10px;
+    min-width: 175px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type=radio] {
+    margin: 0 20px;
+}
+
+.filt-block>label {
+    margin-right: 50px;
+}
+
+.title {
+    margin: 0 20px 0 0;
+}
+
+input[type=submit], input[type=button] {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 232, 29);
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+}
+
+thead td {
+    background-color: lightblue;
+    color: black;
+}
+
+td,
+th {
+    padding: 10px 25px;
+    border: 2px solid white;
+}
+
+.out {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: inline;
+}
+
+.input-block {
+    display: flex;
+    justify-content: space-around;
+    flex: 0 1 500px;
+}
+
+
+.radio {
+    margin: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}

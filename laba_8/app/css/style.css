@@ -1,0 +1,94 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    padding: 30px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    background: url("../resource/back.jpg") 50% 50%/cover no-repeat;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    min-width: 1360px;
+}
+
+.header,
+.footer {
+    flex: 0 0 50px;
+    padding: 15px;
+}
+
+.header__item,
+.footer__item {
+    height: 100px;
+    background: rgba(255, 255, 255, 0.575);
+}
+
+.container {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.nav,
+.right-side {
+    color: white;
+    margin: 0 15px;
+    flex: 0 0 250px;
+    background: rgba(0, 0, 0, 0.698);
+}
+
+.article {
+    color: white;
+    flex: 1 1 auto;
+    background: rgba(59, 59, 59, 0.5);
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: vertical;
+    padding: 10px;
+    font-size: 14px;
+    margin: 20px auto;
+}
+
+.btn-hub {
+    display: flex;
+    justify-content: space-between;
+}
+
+.output {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+button, input[type=button] {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}

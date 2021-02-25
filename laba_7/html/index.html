@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Form</title>
+</head>
+
+<body>
+	<div class="site">
+		<header class="header">
+			<div class="header__item"></div>
+		</header>
+		<div class="container">
+			<nav class="nav"></nav>
+			<article class="article" id="content">
+				<form id='form' class="form">
+					<div class="first">
+						<label>
+							<span>Имя</span>
+							<input id="name" type="text" required />
+						</label>
+						<label>
+							<span>Пол</span>
+							<input id="sex" type="text" required />
+						</label>
+						<label>
+							<span>Группа</span>
+							<input id="group" type="text" required />
+						</label>
+						<label>
+							<span>Факультет</span>
+							<input id="faculty" type="text" required />
+						</label>
+					</div>
+					<div class="second">
+						<label>
+							<span>Нохара</span>
+							<input name="students" id="stud_1" type="radio" required />
+						</label>
+						<label>
+							<span>Учиха</span>
+							<input checked name="students" id="stud_2" type="radio" required />
+						</label>
+						<label>
+							<span>Хатаке</span>
+							<input name="students" id="stud_3" type="radio" required />
+						</label>
+						<button id="loadData" type="button">Загрузить данные</button>
+						<button id="addPic" type="button">Загрузить фото</button>
+						<button id="lock" type="button">Блокировать/Разблокировать</button>
+					</div>
+					<div id="third">
+						<div id="out"></div>
+						<div id="text"></div>
+					</div>
+				</form>
+			</article>
+			<aside class="right-side"></aside>
+		</div>
+		<footer class="footer">
+			<div class="footer__item"></div>
+		</footer>
+	</div>
+</body>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

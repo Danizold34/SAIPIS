@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Laba 1</title>
+        <style>
+            table, td{
+                border: 2px dashed black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        	.myptr:before {
+        		content: "- ";
+        	}
+        	.skobka:before {
+        		content: counter(item) ') '; 
+  				counter-increment: item; 
+  				margin-left: -20px;
+        	}
+        	.symbol:before {
+        		content: counter(item, lower-alpha) ') '; 
+  				counter-increment: item; 
+  				margin-left: -20px;
+        	}
+        </style>
+    </head>
+    <body bgcolor="#ba55d3">
+    <table align="center" width="100%" bgcolor="yellow">
+        <caption style="color: white; font-weight: bold; font-size: 2em; font-style: italic;">Компьютерные игры</caption>
+        <tr>
+            <td style="text-align: justify;" colspan="1" rowspan="3" bgcolor="yellow">
+                <h2 style="color: green">Немного об играх.</h2>
+                <p style="font-weight: bold; color: #008B8B">
+                	Игра — одна из важнейших сторон жизни человека. Стратегии развивают скорость мышления и быстроту принятия решений, шутеры вроде Call of Duty концентрируют внимание и даже повышают остроту зрения. Развитию логического мышления способствуют квесты и ролевые игры.
+                </p>
+            </td>
+            <td style="min-width: 320px;" width="30%" colspan="1" rowspan="3" bgcolor="yellow" valign="top">
+                <img width="70%" src="witcher.jpg" alt="The Witcher 3" align="left" style="padding-right: 10px">
+                <h1 style="color: red;">New!</h1> 
+            </td>
+            <td width="60%"  align="center" colspan="5" rowspan="1" bgcolor="yellow">
+                <h3 style="color: blue">Факты об играх.</h3>
+            </td>
+        </tr>
+         <tr>
+            <td colspan="2" rowspan="1" bgcolor="orange">
+            	<ins style="font-style: italic; color: #4B0082">
+            		Лицензионные диски Fifa 2001 были с запахом травы.
+            	</ins>
+            </td>
+            <td bgcolor="yellow">
+            	<p style="font-stretch: expanded; color: #0000CD; font-size: 1em; text-align: left;">
+            		Изначально Лару Крофт должны были звать Лаура Круз.
+            	</p>
+            </td>
+            <td style="min-width: 15%" width="15%" bgcolor="yellow">
+                <p style="font-stretch: condensed; color: rgb(34, 139, 34); text-align: right;">
+                	The Sims входила в десятку самых продаваемых игр Великобритании на протяжении двух лет.
+                </p>
+            </td>
+            <td colspan="1" rowspan="2" bgcolor="yellow" style="min-width: 200px" valign="top">
+                <img width="50%" src="spacewars.jpg" alt="Space Wars" align="left" style="padding-right: 10px">
+                <p style="font-family: fantasy, Impact; color: red">
+                    Первая в мире игра!
+                </p>
+                    
+                
+            </td>
+        </tr>
+         <tr>
+            <td valign="top" style="min-width: 150px" bgcolor="yellow">
+                <p style="font-weight: bold;">Игры от команий</p>
+                <ol style="font-style: italic; font-weight: bold;">
+                	<li>
+                		EA
+                		<ol style="font-style: normal; font-weight: normal;">
+                            <li><span style="text-decoration: underline; color: blue;"> Sims 4 </span></li> 
+                            <li><span style="text-decoration: underline; color: blue"> FIFA 21</span></li>
+                        </ol>
+         			</li>
+         			<li>
+         				CD Projekt
+         				<ul type="disc" style="font-style: normal; font-weight: normal;">
+                            <li style="padding-top: 10px">Witcher 3</li>
+                            <li>Cyberpunk 2077</li>
+                        </ul>
+         			</li>
+                </ol>
+            </td>
+            <td valign="top" style="min-width: 150px" bgcolor="yellow">
+                <p style="font-style: italic; font-weight: bold;">Игры 2020</p>
+                <ul>
+                    <li type="none" class="myptr" style="padding-top: 10px">Half-Life: Alyx</li>
+                    <li type="none" class="myptr" style="padding-top: 10px">Doom Eternal</li>
+                </ul>
+            </td>
+            <td valign="top" bgcolor="yellow">
+            	<p align="center" style="font-weight: bold; text-decoration: underline;">Серии игр с дополнениями</p>
+            	<ol type="I" style="font-weight: bold; ">
+            		<li><span style="text-decoration: underline; padding-left: 20px">Ведьмак</span>
+            			<ol style="font-style: italic; margin-left: -20px" type="A">
+            				<li>Ведьмак 2: Убийцы королей
+            					<ol style="padding: 0; font-weight: normal; font-style: normal; list-style-type: none; counter-reset: item">
+            						<li type="none" class="skobka">Беда с троллем</li>
+            						<li type="none" class="skobka">Мешок перьев</li>
+            					</ol>
+            				</li>
+            				<li>Ведьмак 3: Дикая Охота
+            					<ol  type="a" style="padding: 0; font-weight: normal; font-style: normal; counter-reset: item">
+            						<li type="none" class="symbol">Каменные сердца</li>
+            						<li type="none" class="symbol">Кровь и вино</li>
+            					</ol>
+            				</li>
+            			</ol>
+            		</li>
+            		<li><span style="text-decoration: underline; padding-left: 20px">Assassin's Creed</span>
+            			<ol style="font-style: italic; margin-left: -20px" type="A">
+            				<li>Assassin's Creed Odyssey</li>
+            					<ol style="padding: 0; font-weight: normal; font-style: normal;">
+            						<li>Образ веры</li>
+            						<li>Наследие поэта</li>
+            						<li>Слепой царь</li>
+            					</ol>
+            				<li>Assassin's Creed: Origins
+            					<ol style="font-weight: normal; font-style: normal;">
+            						<li style="padding-top: 10px; margin-left: -60px"  type="none">Проклятие Фараонов</li>
+            						<li style="padding-top: 10px; margin-left: -60px" type="none">Незримые</li>
+            						
+            					</ol>
+            				</li>
+            			</ol>
+            		</li>
+            	</ol>
+            </td>
+            <td bgcolor="yellow" valign="top">
+                 <img width="100%" src="cat.jpg" alt="Cat">
+            </td>
+        </tr>
+    </table>
+    </body>
+    </html>

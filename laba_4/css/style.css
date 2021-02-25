@@ -1,0 +1,103 @@
+/*Обнуление*/
+*{padding:0;margin:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+html,body{height:100%;width:100%;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+/*--------------------*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.site {
+	background: url("../resource/back.jpg") 50% 50%/cover no-repeat;
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	min-width: 1360px;
+}
+
+.header, .footer {
+	flex: 0 0 150px;
+	padding: 15px;
+}
+
+.header__item, .footer__item {
+	height: 120px;
+	background: rgba(209, 0, 0, .85);
+}
+
+.container {
+	display: flex;
+	flex: 1 1 auto;
+}
+
+.nav, .right-side {
+	margin: 0 15px;
+	flex: 0 0 200px;
+	background: rgba(215, 208, 180, 0.85);
+}
+
+.article {
+	color: white;
+	flex: 1 1 auto;
+	background: rgba(59, 59, 59, 0.5);
+	padding: 10px;
+}
+
+.after__form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.sel {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.form__row {
+	display: flex;
+	
+	align-items: center;
+  	justify-content: center;
+}
+
+select {
+	margin: 10px 20px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color:  rgb(215, 208, 180);
+}
+
+#result {
+	margin: 0 10px 10px 0;
+}
+
+button {
+	font-size: 14px;
+	display: block;
+	margin: 20px 20px;
+	padding: 15px 40px;
+	border-radius: 5px;
+	background-color:  rgb(215, 208, 180);
+}
+
+.table {
+	border-collapse: collapse;
+}
+td, th {
+	padding: 5px;
+	border: 2px solid  rgb(10, 188, 194);
+}
+
+.radioButton {
+	margin: 40px 10px 40px 10px;
+}
